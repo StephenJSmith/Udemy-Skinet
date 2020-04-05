@@ -1,0 +1,15 @@
+<header>
+  <span *ngIf="isProductsToDisplay()">
+    Showing
+    <strong>
+      {{ displayedPageRange() }}
+    </strong> of <strong>
+      {{this.totalCount}}
+    </strong> Results
+  </span>
+  <span *ngIf="!isProductsToDisplay()">
+    There are
+    <strong>0</strong>
+    results for this filter
+  </span>
+</header>
