@@ -12,10 +12,11 @@ export interface IOrder {
   orderDate: string;
   shipToAddress: IAddress;
   deliveryMethod: string;
+  shippingPrice: number;
   orderItems: IOrderItem[];
   subtotal: number;
+  total: number;
   status: number;
-  paymentIntentId: string;
 }
 
 export interface IOrderItem {
