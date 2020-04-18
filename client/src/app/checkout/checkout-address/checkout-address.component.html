@@ -47,20 +47,12 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-6">
-    {{addressForm.valid}}
-  </div>
-  <div class="col-6">
-    {{addressForm.dirty}}
-  </div>
-</div>
-
 <div class="float-none d-flex justify-content-between flex-column flex-lg-row mb-5">
   <button routerLink="/basket" class="btn btn-outline-primary">
     <i class="fa fa-angle-left"></i> Back to Basket
   </button>
-  <button cdkStepperNext class="btn btn-primary">
+  <button [disabled]="addressForm.invalid"
+    cdkStepperNext class="btn btn-primary">
     Go to Delivery
     <i class="fa fa-angle-right"></i>
   </button>
