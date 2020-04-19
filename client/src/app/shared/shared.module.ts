@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
@@ -26,6 +26,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterModule,
     PaginationModule.forRoot(),
     CarouselModule.forRoot(),
@@ -34,6 +35,7 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     ReactiveFormsModule,
+    FormsModule,
     PaginationModule,
     CarouselModule,
     BsDropdownModule,
