@@ -3,4 +3,6 @@ bin
 appsettings.json
 node_modules
 *.rdb
+wwwroot
+publish
 
