@@ -12,7 +12,7 @@ import { BasketService } from '../basket/basket.service';
 })
 export class CheckoutComponent implements OnInit {
   checkoutForm: FormGroup;
-  basketTotals$: Observable<IBasketTotals>
+  basketTotals$: Observable<IBasketTotals>;
 
   get addressForm(): AbstractControl {
     return this.checkoutForm.get('addressForm');
